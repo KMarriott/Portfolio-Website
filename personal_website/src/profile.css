@@ -1,0 +1,54 @@
+
+.name{
+	font-family: 'Yatra One', cursive;
+	font-size: 50px;
+	color: #e5511b;
+}
+
+.center{
+	text-align: center;
+}
+
+.container{
+	background-color: white;
+	width: 75%;
+	margin: auto 0px;
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.placer{
+	display: inline-flex;
+	background: #e5511b;
+	padding: 5%;
+	margin: auto 5%;
+}
+
+.seperator{
+	margin: 5px;
+}
+
+.body-text{
+
+	display: inline-flex;
+	text-align: center;
+	width: 75%;
+}
+
+.head{
+	border-top: solid #e5511b;
+	border-bottom: solid #e5511b;
+}
+
+.placer:hover
+{
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
