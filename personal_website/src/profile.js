@@ -17,6 +17,12 @@ class Profile extends Component {
 
 		<div className='center'>
 		Portfolio Coming Soon
+		<br/>
+		<br/>
+		<div><a href="https://github.com/KMarriott/">Github</a></div>
+		<div><a href="https://www.linkedin.com/in/khemmarriott/">Linkedin</a></div>
+
+
 		</div>
 
 
