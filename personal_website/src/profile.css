@@ -1,4 +1,30 @@
 
+.main{
+	height: 100px;
+	background: #e5511b;
+}
+
+.main{
+	animation: load 0.5s linear;
+}
+
+@keyframes load {
+  0% height: 0px 
+}
+
+.select{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background: #e5511b;
+}
+
+.nav-select:hover{
+	color: white;
+	background: #e5511b;		
+}
+
+
 .name{
 	font-family: 'Yatra One', cursive;
 	font-size: 50px;
@@ -10,11 +36,12 @@
 }
 
 .container{
-	background-color: white;
+	/*background-color: white;*/
 	width: 75%;
 	margin: auto 0px;
 	display: inline-flex;
 	flex-direction: column;
+	justify-content: center;
 }
 
 .placer{
