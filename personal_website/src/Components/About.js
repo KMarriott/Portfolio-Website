@@ -68,13 +68,8 @@ class About extends Component {
 		transitionEnterTimeout={500}
 		transitionLeaveTimeout={300}>
 
-		<div onClick={handleClick.bind(this)} className = 'center body'>
-		
-		<div  className='main center ' >
-		
-		<br/>
-		<div><h1>{listtraits}</h1></div>
-		</div>
+		<div  onClick={handleClick.bind(this)} className = 'center body main'>
+		<h1>{listtraits}</h1>
 		</div>
 
 		</CSSTransitionGroup>

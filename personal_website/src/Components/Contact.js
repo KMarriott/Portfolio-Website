@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
 
+import './general.css';
+import './css/hover.css';
+
+
 class Contact extends Component {
 
 
@@ -13,10 +17,15 @@ class Contact extends Component {
 
 		<div className = 'center body'>
 		<div className='main center'>
-		<br/>
-		More Information:
 
-		Email Linkedin Github Resume 
+		<div className="links">
+		<div className="hvr-float linkout"><a href="">Email</a></div>
+		<div className="hvr-float linkout"><a href="https://www.linkedin.com/in/khemmarriott/">Linkedin</a></div>
+		<div className="hvr-float linkout"><a href="https://github.com/kmarriott">Github</a></div>
+		<div className="hvr-float linkout"><a href="">Resume</a></div> 
+		</div>
+
+
 
 		</div>
 

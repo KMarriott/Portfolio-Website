@@ -14,10 +14,7 @@ class Work extends Component {
 		<div className = 'center body' key='Work'>
 		<div className='main center work'>
 		<br/>
-		Checkout my work on Github!:
-
-		<div><a href="https://github.com/KMarriott/">Github</a></div>
-		</div>
+WIP		</div>
 		</div>
 
 		</CSSTransitionGroup>

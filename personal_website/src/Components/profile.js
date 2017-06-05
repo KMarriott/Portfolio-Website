@@ -4,7 +4,7 @@ import { CSSTransitionGroup } from 'react-transition-group';
 import Work from './Work.js';
 import About from './About.js';
 import Contact from './Contact.js';
-import './Ball.css';
+
 
 class Profile extends Component {
 
@@ -75,14 +75,17 @@ class Profile extends Component {
 
 		<div className='container'>
 
-		
 		<About/>
+		
+		<div className="App-logo">
+		*
+		</div>
 
 
 		<div className="description">
-			
-			I am team focused and work well with others. I’m easy going, understanding, and emotionally mature when faced with difficulties. I am reliable and honest and accountable to my mistakes. When faced with problems, I work to ensure things work as smoothly as possible. As a creative mind my goal is to find and create solutions to problems I find to make a better environment for everyone I work with. 
-			
+
+		I am team focused and work well with others. I’m easy going, understanding, and emotionally mature when faced with difficulties. I am reliable and honest and accountable to my mistakes. When faced with problems, I work to ensure things work as smoothly as possible. As a creative mind my goal is to find and create solutions to problems I find to make a better environment for everyone I work with. 
+
 
 		</div>
 		
