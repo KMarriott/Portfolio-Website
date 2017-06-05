@@ -1,5 +1,12 @@
+body {
+  background: #e0e0e0;
+}
+
 .App {
   text-align: center;
+  background: #e5511b;
+  font-family: 'Varela Round', sans-serif;
+  color: #e0e0e0;
 }
 
 .App-logo {

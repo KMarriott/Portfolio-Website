@@ -4,6 +4,7 @@ import { CSSTransitionGroup } from 'react-transition-group';
 import Work from './Work.js';
 import About from './About.js';
 import Contact from './Contact.js';
+import './Ball.css';
 
 class Profile extends Component {
 
@@ -22,25 +23,25 @@ class Profile extends Component {
 		this.revealWork = function(e) {
 			this.setState({
 				work_hover: true,
-				about_hover: false,
-				contact_hover: false,
+				// about_hover: false,
+				// contact_hover: false,
 			});
 			console.log('work');
 		}
 
 		this.revealAbout = function(e) {
 			this.setState({
-				work_hover: false,
+				// work_hover: false,
 				about_hover: true,
-				contact_hover: false,
+				// contact_hover: false,
 			});
 			console.log('about');
 		}
 
 		this.revealContact = function(e) {
 			this.setState({
-				work_hover: false,
-				about_hover: false,
+				// work_hover: false,
+				// about_hover: false,
 				contact_hover: true,
 			});
 			console.log('contact');
@@ -66,37 +67,42 @@ class Profile extends Component {
 	}
 
 
+
 	render() {
 
 		return <div className='center'>
+		
+
 		<div className='container'>
 
-		<div className='name center'> Khem Marriott</div>
+		
+		<About/>
+
+
+		<div className="description">
+			
+			I am team focused and work well with others. I’m easy going, understanding, and emotionally mature when faced with difficulties. I am reliable and honest and accountable to my mistakes. When faced with problems, I work to ensure things work as smoothly as possible. As a creative mind my goal is to find and create solutions to problems I find to make a better environment for everyone I work with. 
+			
+
+		</div>
+		
+		<Contact/>
 
 		<div className="select">
 		
 		<div className="work-button nav-select" 
 		onMouseEnter={this.revealWork}
-		>WORK
+		>
+		<div className="revealbutton">WORK</div>
 		</div>
 
-		<div className="about-button nav-select" 
-		onMouseEnter={this.revealAbout}
-		>ABOUT
-		</div>
-
-		<div className="contact-button nav-select" 
-		onMouseEnter={this.revealContact}
-		>CONTACT		
-		</div>
 		</div>	
 		<div>
 		</div>
 
-		{this.state.work_hover ? (<Work/>) : " "}	
-		{this.state.about_hover ? (<About/>) : " "}
-		{this.state.contact_hover ? (<Contact/>) : " "}
-
+		
+		{this.state.work_hover ? (<Work/>) : " "}
+		
 		</div>
 		</div>
 

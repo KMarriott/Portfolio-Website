@@ -1,7 +1,18 @@
+.work-button{
+	background: #ae3d15;
+	border-radius: 5px;
+	height: 2em;
+	width: 100%;
+
+}
 
 .main{
-	height: 100px;
 	background: #e5511b;
+	height: 100px;
+}
+
+.work{
+	background: #ae3d15;
 }
 
 .main{
@@ -9,7 +20,7 @@
 }
 
 @keyframes load {
-  0% height: 0px 
+  from { height: 0px; }
 }
 
 .select{
@@ -21,7 +32,7 @@
 
 .nav-select:hover{
 	color: white;
-	background: #e5511b;		
+	background: #ae3d15;
 }
 
 
@@ -79,3 +90,4 @@
     transition: all 200ms ease-in;
     transform: scale(1.5);
 }
+

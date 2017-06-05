@@ -1,27 +1,30 @@
 import React, { Component } from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
 
-
-class Work extends Component {
+class Contact extends Component {
 
 
 	render() {
+
 		return <CSSTransitionGroup
 		transitionName="example"
 		transitionEnterTimeout={500}
 		transitionLeaveTimeout={300}>
 
-		<div className = 'center body' key='Work'>
+		<div className = 'center body'>
 		<div className='main center'>
 		<br/>
-		Work page.
-		</div>
+		More Information:
+
+		Email Linkedin Github Resume 
+
 		</div>
 
+		</div>
 		</CSSTransitionGroup>
 	}
 
 }
 
 
-export default Work
+export default Contact

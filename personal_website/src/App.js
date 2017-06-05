@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-import './profile.css';
-import Profile from './profile.js';
+import './Components/profile.css';
+import Profile from './Components/profile.js';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+      <head>
       <title> Khem Marriott </title>
+      </head>
         <Profile />
       </div>
 
