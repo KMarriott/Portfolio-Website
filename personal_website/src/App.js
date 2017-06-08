@@ -27,9 +27,6 @@ class App extends Component {
 
     return (
       <div className="App">
-      <head>
-      <title> Khem Marriott </title>
-      </head>
 
       {!(this.state.clicked) ? (
         <div>

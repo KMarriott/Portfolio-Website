@@ -3,17 +3,26 @@
 	margin: auto;
 }
 
-.work-button{
-	background: #ae3d15;
-	border-radius: 5px;
-	height: 2em;
-	width: 100%;
 
+.box{
+	width: 100%;
+	height: 5em;
+}
+.circle-button{
+	background: #ae3d15;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+	height: 5em;
+	width: 5em;
+
+animation: slide-enter 1s linear;
 }
 
 .main{
 	background: #e5511b;
-	height: 100px;
+	/*height: 100px;*/
 }
 
 .work{
@@ -21,11 +30,18 @@
 }
 
 .main{
-	animation: load 0.5s linear;
+	animation: load 1s linear;
 }
 
 @keyframes load {
-  from { height: 0px; }
+ from {
+    transform: translateY(100%);
+    /*opacity: 0;*/
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .select{
@@ -85,14 +101,14 @@
 
 .placer:hover
 {
-    z-index: 2;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.5);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.5);   
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.5);
-    transition: all 200ms ease-in;
-    transform: scale(1.5);
+	z-index: 2;
+	-webkit-transition: all 200ms ease-in;
+	-webkit-transform: scale(1.5);
+	-ms-transition: all 200ms ease-in;
+	-ms-transform: scale(1.5);   
+	-moz-transition: all 200ms ease-in;
+	-moz-transform: scale(1.5);
+	transition: all 200ms ease-in;
+	transform: scale(1.5);
 }
 
