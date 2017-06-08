@@ -100,18 +100,20 @@ class Profile extends Component {
 
 		</div>
 
-		<div className= "hvr-float">
+		{
+		// 	<div className= "hvr-float">
 		
-		<div
-		className="circle-button nav-select" 
-		onClick={this.revealWork}>
-		
-
-		<div className="revealbutton hvr-float">WORK</div>
+		// <div
+		// className="circle-button nav-select" 
+		// onClick={this.revealWork}>
 		
 
-		</div>
-		</div>
+		// <div className="revealbutton hvr-float">WORK</div>
+		
+
+		// </div>
+		// </div>
+	}
 
 		<div className= "hvr-float">
 		

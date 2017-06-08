@@ -25,8 +25,15 @@ animation: slide-enter 1s linear;
 	/*height: 100px;*/
 }
 
+
+.description{
+	width: 75%;
+	background: hsla(0, 0%, 0%, .1);
+	border-radius: 1%;
+}
+
 .work{
-	background: #ae3d15;
+	/*background: #ae3d15;*/
 }
 
 .main{

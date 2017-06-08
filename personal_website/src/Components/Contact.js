@@ -15,7 +15,7 @@ class Contact extends Component {
 		transitionEnterTimeout={500}
 		transitionLeaveTimeout={300}>
 
-		<div className = 'center body'>
+		<div className = 'center '>
 		<div className='main center'>
 		<div className="links">
 		<div className= "hvr-float"><a href="mailto:khemmarriott@gmail.com"> <div className="circle-button linkout">Email!</div></a></div>
