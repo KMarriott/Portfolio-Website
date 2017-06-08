@@ -12,9 +12,13 @@ class Work extends Component {
 		transitionLeaveTimeout={300}>
 
 		<div className = 'center body' key='Work'>
-		<div className='main center work'>
+		<div className='main center work links'>
 		<br/>
-WIP		</div>
+		<div className= "hvr-float"><a href="https://kmarriott.github.io/DOGame/"> <div className="circle-button linkout">RPG Game</div></a></div>
+		<div className= "hvr-float"><a href="https://stormy-taiga-16081.herokuapp.com/"> <div className="circle-button linkout">Virtual Pet</div></a></div>
+		
+
+</div>
 		</div>
 
 		</CSSTransitionGroup>

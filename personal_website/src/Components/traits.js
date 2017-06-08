@@ -63,16 +63,17 @@ class Traits extends Component {
 		if(this.state.count>this.state.traits.length)(
 
 			this.setState({
-			count: 0
-		}))
+				count: 0
+			})
+			)
 	}
 
-	componentDidMount() {
-		this.intervalId = setInterval(this.timer.bind(this), 2000);
-	}
-	componentWillUnmount(){
-		clearInterval(this.intervalId);
-	}
+componentDidMount() {
+	this.intervalId = setInterval(this.timer.bind(this), 3000);
+}
+componentWillUnmount(){
+	clearInterval(this.intervalId);
+}
 
 
 
@@ -80,7 +81,7 @@ class Traits extends Component {
 
 
 
-		let traits = this.state.traits
+	let traits = this.state.traits
 
 		// this.setState({
 		// 	traitslength: traits.length

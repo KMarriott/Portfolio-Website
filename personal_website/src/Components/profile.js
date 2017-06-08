@@ -71,7 +71,7 @@ class Profile extends Component {
 
 	render() {
 
-		return <div className='center'>
+		return <div className='centered_profile'>
 
 		<Traits/>
 		
@@ -86,7 +86,7 @@ class Profile extends Component {
 	<div className="App-logo">
 		*
 		</div>
-
+{}
 		<div className= "hvr-float">
 		<div
 		className="circle-button nav-select" 
@@ -100,20 +100,20 @@ class Profile extends Component {
 
 		</div>
 
-		{
-		// 	<div className= "hvr-float">
 		
-		// <div
-		// className="circle-button nav-select" 
-		// onClick={this.revealWork}>
+			<div className= "hvr-float">
 		
-
-		// <div className="revealbutton hvr-float">WORK</div>
+		<div
+		className="circle-button nav-select" 
+		onClick={this.revealWork}>
 		
 
-		// </div>
-		// </div>
-	}
+		<div className="revealbutton hvr-float">PROJECTS</div>
+		
+
+		</div>
+		</div>
+	
 
 		<div className= "hvr-float">
 		
