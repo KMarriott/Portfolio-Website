@@ -34,7 +34,7 @@ class App extends Component {
         <div className="App-logo">
         *
         </div>
-        Click me!
+        <h1>Click me!</h1>
         </div>
 
         </div>) : " "}

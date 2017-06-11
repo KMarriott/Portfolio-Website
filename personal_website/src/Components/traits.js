@@ -8,6 +8,7 @@ class Traits extends Component {
 
 		this.state={
 			count: 0,
+			language_count: 0,
 			time: 0,
 			traits: [
 			"Web Developer",
@@ -15,9 +16,11 @@ class Traits extends Component {
 			"Scientist",
 			"Writer",
 			"Geek",
+			"Mobile Application Tester",
 			"Making things as smooth as possible",
 			"API tester",
 			"Gamer",
+			"Web Application Tester",
 			"Motivated",
 			"Honest",
 			"Creative",
@@ -30,20 +33,48 @@ class Traits extends Component {
 			"Back-end developer",
 			"Not the usual",
 			"Thoughtful",
-			"Learning different skills",
 			"Problem Solver",
 			"Hard Working",
 			"Context Driven",
 			"Biologist",
 			"Nerdy",
+			"Automation API Tester",
 			"Hard worker",
 			"Emotionally Wise",
 			"Self learner",
 			"Analytical",
 			"Patient",
+			"Mobile Application Tester",
 			"Kind",
 			"Hermit",
 			"Loyal"
+			],
+			languages: [
+			"Javascript ES6",
+			"Node.js",
+			"React",
+			"Express",
+			"Linux",
+			"HTML5 + CSS",
+			"Phyton",
+			"Ruby",
+			"On Rails,",
+			"Java",
+			"Junit",
+			"Selenium",
+			"Mocha",
+			"Chai",
+			"jQuery",
+			"Mustache",
+			"Django",
+			"Discord",
+			"Google Apps",
+			"Slack",
+			"Skype",
+			"Trello",
+			"Sublime Text",
+			"JIRA",
+			"Photoshop"
 			]
 		}
 
@@ -53,11 +84,8 @@ class Traits extends Component {
 
 
 	timer() {
-		console.log(this.state.count)
-		console.log(this.state.traits.length)
 		this.setState({
-			count: this.state.count+1,
-			time: this.state.time+1
+			count: this.state.count+1
 		})
 
 		if(this.state.count>this.state.traits.length)(
@@ -68,58 +96,75 @@ class Traits extends Component {
 			)
 	}
 
+
+language_timer() {
+
+	let value = this.state.language_count+1
+	if(this.state.language_count>=this.state.languages.length){
+		value = 0
+	}
+	
+	this.setState({
+		language_count: value
+
+	})
+
+}
+
+// switch(language_timer, timer){
+// 	this.setState({
+// 		time: this.state.time+1
+// 	})
+// 	console.log(this.state.time%2)
+// 	if(this.state.time%2===0){
+// 		this.language_timer.bind(this)
+// 	}
+// 	else{ this.timer.bind(this) }
+
+// }
+
 componentDidMount() {
+
 	this.intervalId = setInterval(this.timer.bind(this), 3000);
+	this.intervalId2 = setInterval(this.language_timer.bind(this), 3000)
 }
 componentWillUnmount(){
 	clearInterval(this.intervalId);
+	clearInterval(this.intervalId2);
 }
 
 
 
-	render() {
+render() {
 
 
 
 	let traits = this.state.traits
-
+	let languages = this.state.languages
 		// this.setState({
 		// 	traitslength: traits.length
 		// })
 
 		let show_traits= []
 
-		function handleClick(){
-
-			let new_count = this.state.count++
-			if(traits[new_count]===undefined){
-				console.log("too much")
-				this.setState({
-					count: 0
-				})
-			}
-			else
-				this.setState({
-					count: this.state.count++
-				})
-
-			listtraits.push(
-				<div>
-				{traits[this.state.count]}
-				</div>
-				)
-			console.log(traits[this.state.count])
-		}
 
 		let listtraits =[
-		<div key={traits[this.state.count] + this.state.time}
-		className="center body main slide-enter">
+		<div key={traits[this.state.count]}
+		className="center body main enter-up">
 		{traits[this.state.count]}
+		</div>]
+
+		let listlanguages =[
+		<div key={languages[this.state.language_count]}
+		className="center body main enter-up">
+		{languages[this.state.language_count]}
 		</div>]
 
 		return <div>
 		<h1>Khem Marriott</h1>
 		{listtraits}
+		<br/>
+{listlanguages}
 		</div>
 	}
 

@@ -3,7 +3,7 @@ animation: slide-enter 1s linear;
 }
 
 .slide-leave {
-animation: slide-exit 1s linear;
+animation: enter-up 1s linear;
 }
 
 
@@ -14,7 +14,7 @@ animation: slide-exit 1s linear;
 100% {transform: translate(0px, 0px); opacity:1;}
 }
 
-@keyframes slide-exit {
-0% {transform: translate(0%,0); opacity:1;}
-100% {transform: translate(-25%, 0px); opacity:0;}
+@keyframes enter-up {
+0% {transform: translate(0%,0); opacity:0;}
+100% {transform: translate(-25%, 0px); opacity:1;}
 }

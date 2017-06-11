@@ -74,19 +74,29 @@ class Profile extends Component {
 		return <div className='centered_profile'>
 
 		<Traits/>
+		<div className="select">
+		<br/>
+		Team Focused, Intelligent, and Technology Driven. 
+		<br/><br/>
+		I am a New York based developer and tester. 
+
+		<br/><br/>
+		My goal during any project is to use my skills to solve problems and create an environment where things work as smoothly as possible, so that I and everyone I work with may better reach their goals. 
 		
-		<div className="box select">
 		</div>
-		
+		<br/>
 
 
 
 		<div className="select">
 
-	<div className="App-logo">
+
+
+
+		<div className="up-down">
 		*
 		</div>
-{}
+		{}
 		<div className= "hvr-float">
 		<div
 		className="circle-button nav-select" 
@@ -101,7 +111,7 @@ class Profile extends Component {
 		</div>
 
 		
-			<div className= "hvr-float">
+		<div className= "hvr-float">
 		
 		<div
 		className="circle-button nav-select" 
@@ -113,7 +123,7 @@ class Profile extends Component {
 
 		</div>
 		</div>
-	
+
 
 		<div className= "hvr-float">
 		
@@ -130,7 +140,8 @@ class Profile extends Component {
 
 
 
-	<div className="App-logo">
+
+		<div className="up-down">
 		*
 		</div>
 

@@ -5,12 +5,17 @@ body {
 .App {
   text-align: center;
   background: #e5511b;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Gruppo', cursive;
   color: #e0e0e0;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 5s linear;
+  height: 80px;
+}
+
+.up-down {
+  animation: up-down infinite 5s linear;
   height: 80px;
 }
 
@@ -28,6 +33,12 @@ body {
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@keyframes up-down {
+  100% { transform: translateY(0em); }
+  50% { transform: translateY(5em); }
+  0% { transform: translateY(0em); }
 }
 
 .centered {
