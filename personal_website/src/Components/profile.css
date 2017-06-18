@@ -1,7 +1,10 @@
+
 .description{
 	width: 80%;
 	margin: auto;
 }
+
+
 
 .center{
 	display: flex;
@@ -22,6 +25,7 @@
   	justify-content: center;
 	height: 5em;
 	width: 5em;
+	padding: 5px;
 
 animation: slide-enter 1s linear;
 }

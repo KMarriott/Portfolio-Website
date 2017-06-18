@@ -88,7 +88,7 @@ class Traits extends Component {
 			count: this.state.count+1
 		})
 
-		if(this.state.count>this.state.traits.length)(
+		if(this.state.count>this.state.traits.length-1)(
 
 			this.setState({
 				count: 0
@@ -100,7 +100,7 @@ class Traits extends Component {
 language_timer() {
 
 	let value = this.state.language_count+1
-	if(this.state.language_count>=this.state.languages.length){
+	if(this.state.language_count>=this.state.languages.length-1){
 		value = 0
 	}
 	
@@ -125,8 +125,8 @@ language_timer() {
 
 componentDidMount() {
 
-	this.intervalId = setInterval(this.timer.bind(this), 3000);
-	this.intervalId2 = setInterval(this.language_timer.bind(this), 3000)
+	this.intervalId = setInterval(this.timer.bind(this), 10000);
+	this.intervalId2 = setInterval(this.language_timer.bind(this), 10000)
 }
 componentWillUnmount(){
 	clearInterval(this.intervalId);
@@ -150,21 +150,27 @@ render() {
 
 		let listtraits =[
 		<div key={traits[this.state.count]}
-		className="center body main enter-up">
+		className=" enter-up background-text skills">
 		{traits[this.state.count]}
 		</div>]
 
 		let listlanguages =[
 		<div key={languages[this.state.language_count]}
-		className="center body main enter-up">
+		className="enter-up background-text traits">
 		{languages[this.state.language_count]}
 		</div>]
 
 		return <div>
+		{
+			// listtraits
+		}{
+			// listlanguages
+		}
 		<h1>Khem Marriott</h1>
-		{listtraits}
-		<br/>
-{listlanguages}
+
+		
+		
+		
 		</div>
 	}
 

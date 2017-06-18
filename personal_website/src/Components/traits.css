@@ -1,11 +1,31 @@
 .slide-enter {
-animation: slide-enter 1s linear;
+animation: slide-enter 10s linear;
 }
 
-.slide-leave {
-animation: enter-up 1s linear;
+.enter-up {
+animation: load 10s linear;
 }
 
+.container-text {
+   position: relative;
+}
+
+.skills{
+	left: -75%;
+}
+
+.traits{
+	left: 75%;
+}
+.background-text {
+   background-color: inherit;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   z-index: -1;
+   overflow: hidden;
+}
 
 
 
